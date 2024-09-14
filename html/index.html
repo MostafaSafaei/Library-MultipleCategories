@@ -81,13 +81,13 @@
                                     </div>
                                     <div class="icons">
                                         <!-- delete icon -->
-                                            <div @click="deleteBook(b.id)" style="cursor: pointer;" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='black'">
+                                            <!-- <div @click="deleteBook(b.id)" style="cursor: pointer;" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='black'">
                                                 <i class="fa-regular fa-trash"></i>
-                                            </div>
+                                            </div> -->
                                             <!-- edit icon -->
-                                            <div @click="goEdit(b.id)" style="cursor: pointer;" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='black'">
+                                            <!-- <div @click="goEdit(b.id)" style="cursor: pointer;" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='black'">
                                                 <i class="fa-regular fa-file-pen"></i>
-                                            </div>
+                                            </div> -->
                                     </div>
                                 </div>
     
@@ -102,6 +102,20 @@
                                             <button @click="b.pages--" style="border: 0; border-radius: 0.4rem; padding: 10px 40px; background: rgb(54, 95, 228); color: white;">
                                                 Buy
                                             </button>
+                                        </div>
+                                        <div class="icons">
+                                            <!-- delete icon -->
+                                                <div @click="deleteBook(b.id)" style="cursor: pointer; background-color: rgb(224, 140, 140); padding: 0.5rem; border-radius: 0.5rem;" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='black'">
+                                                    <!-- <i class="fa-regular fa-trash"></i> -->
+                                                    <span style="font-size: 0.8rem;">Delete</span>
+                                                </div>
+                                                <!-- edit icon -->
+                                                <div @click="goEdit(b.id)" style="cursor: pointer; background: rgb(164, 164, 221); padding: 0.5rem; border-radius: 0.5rem;" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='black'">
+                                                    <!-- <i class="fa-regular fa-file-pen"></i> -->
+                                                    <span style="font-size: 0.8rem;">
+                                                        Edit
+                                                    </span>
+                                                </div>
                                         </div>
                                     </div>
                                     <div style="text-align: center; color: red; margin-block: 0; padding-block: 0; font-size: 0.8rem;">
@@ -169,14 +183,15 @@
                                                 </div>
                                                 <div class="icons">
                                                     <!-- delete icon -->
-                                                        <div @click="deleteBook(b.id)" style="cursor: pointer;" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='black'">
-                                                            <i class="fa-regular fa-trash"></i>
-                                                        </div>
+                                                        <!-- <div @click="deleteBook(b.id)" style="cursor: pointer;" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='black'">
+                                                            <i class="fa-regular fa-trash"></i> -->
+                                                <!-- </div> -->
                                                         <!-- edit icon -->
-                                                        <div @click="goEdit(b.id)" style="cursor: pointer;" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='black'">
+                                                        <!-- <div @click="goEdit(b.id)" style="cursor: pointer;" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='black'">
                                                             <i class="fa-regular fa-file-pen"></i>
-                                                        </div>
-                                                </div>
+                                                        </div> -->
+                                            </div>
+
                                             </div>
     
                                                 <!-- Price and Buy -->
@@ -190,6 +205,20 @@
                                                         <button @click="b.pages--" style="border: 0; border-radius: 0.4rem; padding: 10px 40px; background: rgb(54, 95, 228); color: white;">
                                                             Buy
                                                         </button>
+                                                    </div>
+                                                    <div class="icons">
+                                                        <!-- delete icon -->
+                                                            <div @click="deleteBook(b.id)" style="cursor: pointer; background-color: rgb(224, 140, 140); padding: 0.5rem; border-radius: 0.5rem;" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='black'">
+                                                                <!-- <i class="fa-regular fa-trash"></i> -->
+                                                                <span style="font-size: 0.8rem;">Delete</span>
+                                                            </div>
+                                                            <!-- edit icon -->
+                                                            <div @click="goEdit(b.id)" style="cursor: pointer; background: rgb(164, 164, 221); padding: 0.5rem; border-radius: 0.5rem;" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='black'">
+                                                                <!-- <i class="fa-regular fa-file-pen"></i> -->
+                                                                <span style="font-size: 0.8rem;">
+                                                                    Edit
+                                                                </span>
+                                                            </div>
                                                     </div>
                                                 </div>
                                                 <div style="text-align: center; color: red; margin-block: 0; padding-block: 0; font-size: 0.8rem;">
@@ -311,13 +340,13 @@
                                 </div>
                                 <div class="icons">
                                     <!-- delete icon -->
-                                        <div @click="deleteBook(b.id)" style="cursor: pointer;" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='black'">
+                                        <!-- <div @click="deleteBook(b.id)" style="cursor: pointer;" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='black'">
                                             <i class="fa-regular fa-trash"></i>
-                                        </div>
+                                        </div> -->
                                         <!-- edit icon -->
-                                        <div @click="goEdit(b.id)" style="cursor: pointer;" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='black'">
+                                        <!-- <div @click="goEdit(b.id)" style="cursor: pointer;" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='black'">
                                             <i class="fa-regular fa-file-pen"></i>
-                                        </div>
+                                        </div> -->
                                 </div>
                             </div>
     
@@ -332,6 +361,20 @@
                                         <button @click="b.pages--" style="border: 0; border-radius: 0.4rem; padding: 10px 40px; background: rgb(54, 95, 228); color: white;">
                                             Buy
                                         </button>
+                                    </div>
+                                    <div class="icons">
+                                        <!-- delete icon -->
+                                            <div @click="deleteBook(b.id)" style="cursor: pointer; background-color: rgb(224, 140, 140); padding: 0.5rem; border-radius: 0.5rem;" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='black'">
+                                                <!-- <i class="fa-regular fa-trash"></i> -->
+                                                <span style="font-size: 0.8rem;">Delete</span>
+                                            </div>
+                                            <!-- edit icon -->
+                                            <div @click="goEdit(b.id)" style="cursor: pointer; background: rgb(164, 164, 221); padding: 0.5rem; border-radius: 0.5rem;" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='black'">
+                                                <!-- <i class="fa-regular fa-file-pen"></i> -->
+                                                <span style="font-size: 0.8rem;">
+                                                    Edit
+                                                </span>
+                                            </div>
                                     </div>
                                 </div>
                                 <div style="text-align: center; color: red; margin-block: 0; padding-block: 0; font-size: 0.8rem;">

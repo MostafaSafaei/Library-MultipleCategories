@@ -1,0 +1,163 @@
+body{
+    background: #f2f2f2;
+    font-family: Avenir, Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.header{
+    background: rgb(248, 197, 240);
+    padding-block: 3rem;
+    margin-bottom: 2rem;
+    border-bottom-left-radius: 10px;
+}
+#app , #editApp{
+    max-width: 600px;
+    margin: 0 auto;
+    color: #555;
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(114, 37, 214);
+}
+.firstNav{
+    cursor: pointer;
+    padding-block: 0.4rem;
+}
+.firstNav:hover{
+    color: #00ce89;
+}
+.firstnavParent{
+    justify-content: center;
+    align-items: center;
+    display: flex; gap: 3rem;
+    font-size: 1.6rem;
+}
+.booksNav{
+    display: flex;
+    align-items: center;
+    gap: 2.3rem;
+    margin-inline: 2rem;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.booksNav div{
+    cursor: pointer;
+}
+.action{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icons{
+    display: flex;
+    gap: 1.5rem;
+}
+.active{
+    border-bottom: 4px solid #00ce89;
+}
+.notActive{
+    opacity: 0.4 !important;
+    font-weight: 500;
+}
+label{
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+input, select{
+    border: 0;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+input, select:focus{
+    outline: 0;
+}
+textarea{
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100px;
+}
+.form{
+    background: white;
+    margin: 3rem auto;
+    padding: 1.25rem 1.25rem;
+    box-sizing: border-box;
+    border-radius: 0.625rem;
+}
+form button{
+    display: block;
+    margin: 20px auto 0;
+    background: #00ce89;
+    color: white;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 6px;
+    font-size: 16px;
+}
+button:hover{
+    opacity: 0.7;
+}
+.progressBar{
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 2rem;
+    background: rgba(0, 0, 0, 0.1);
+}
+.cancelButton{
+    background: #e41437;
+}
+.searchInput{
+    margin: 2rem 0px;
+    border-radius: 0.625rem;
+    height: 3rem;
+}
+.searchInput:focus{
+    border: 2px solid #92c1ff;
+    outline: 0;
+}
+.searchButton{
+    position: absolute;
+    height: 2.85rem;
+    right: 0;
+    padding-inline: 2rem;
+    background: #4340f5;
+    border: 0;
+    border-top-right-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+    color: white;
+}
+option{
+    line-height: 1.188rem;
+    font-size: 1.125rem;
+}
+.pill{
+    display: inline-block;
+    margin: 20px 10px 0 0;
+    padding: 6px 12px;
+    background: #eee;
+    border-radius: 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #555;
+    cursor: pointer;
+    text-wrap: nowrap;
+}
+.category{
+    margin-inline: 0.15rem;
+    font-size: 0.73rem;
+    padding-block: 0.2rem;
+    padding-inline: 0.4rem;
+    text-align: center;
+    background: rgb(54, 95, 228);
+    color: white;
+    border-radius: 2rem;
+    text-wrap: nowrap;
+}
